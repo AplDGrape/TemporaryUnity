@@ -29,6 +29,6 @@ public class PlayerCam : MonoBehaviour
         xRot = Mathf.Clamp(xRot, -90f, 90f);
 
         transform.rotation = Quaternion.Euler(xRot, yRot, 0);
-        orientation.rotation = Quaternion.Euler(0, yRot, 0);
+        orientation.rotation = Quaternion.Euler(0, yRot, 0); //added 45 to keep camera face front
     }
 }
